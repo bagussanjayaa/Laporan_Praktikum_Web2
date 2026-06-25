@@ -1,0 +1,420 @@
+ERROR - 2026-04-23 03:31:24 --> Unknown column 'created_at' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Cells\ArtikelTerkini.php(12): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\View\Cell.php(280): App\Cells\ArtikelTerkini->render()
+ 9 SYSTEMPATH\View\Cell.php(106): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArtikelTerkini), 'render', [], 'App\\Cells\\ArtikelTerkini')
+10 SYSTEMPATH\Common.php(1266): CodeIgniter\View\Cell->render('\\App\\Cells\\ArtikelTerkini::render', [], 0, 'AppCellsArtikelTerkinirender40cd750bba9870f18aada2478b24840a')
+11 APPPATH\Views\Layout\main.php(24): view_cell('\\App\\Cells\\ArtikelTerkini::render')
+12 SYSTEMPATH\View\View.php(238): include('C:\\xampp\\htdocs\\lab11_php_ci\\ci4\\app\\Views\\Layout\\main.php')
+13 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(254): CodeIgniter\View\View->render('layout/main', [], true)
+15 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('artikel/index', [], true)
+16 APPPATH\Controllers\Artikel.php(19): view('artikel/index', [...])
+17 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Artikel->index()
+18 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+19 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+22 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+23 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_php_ci\\ci4\\public\\index.php')
+CRITICAL - 2026-04-23 03:31:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'order clause'
+[Method: GET, Route: artikel]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 2 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Cells\ArtikelTerkini.php(12): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\View\Cell.php(280): App\Cells\ArtikelTerkini->render()
+ 6 SYSTEMPATH\View\Cell.php(106): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArtikelTerkini), 'render', [], 'App\\Cells\\ArtikelTerkini')
+ 7 SYSTEMPATH\Common.php(1266): CodeIgniter\View\Cell->render('\\App\\Cells\\ArtikelTerkini::render', [], 0, 'AppCellsArtikelTerkinirender40cd750bba9870f18aada2478b24840a')
+ 8 APPPATH\Views\Layout\main.php(24): view_cell('\\App\\Cells\\ArtikelTerkini::render')
+ 9 SYSTEMPATH\View\View.php(238): include('C:\\xampp\\htdocs\\lab11_php_ci\\ci4\\app\\Views\\Layout\\main.php')
+10 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\View\View.php(254): CodeIgniter\View\View->render('layout/main', [], true)
+12 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('artikel/index', [], true)
+13 APPPATH\Controllers\Artikel.php(19): view('artikel/index', [...])
+14 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Artikel->index()
+15 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+16 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+19 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+20 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_php_ci\\ci4\\public\\index.php')
+CRITICAL - 2026-04-23 03:31:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 4 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Cells\ArtikelTerkini.php(12): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\View\Cell.php(280): App\Cells\ArtikelTerkini->render()
+ 8 SYSTEMPATH\View\Cell.php(106): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArtikelTerkini), 'render', [], 'App\\Cells\\ArtikelTerkini')
+ 9 SYSTEMPATH\Common.php(1266): CodeIgniter\View\Cell->render('\\App\\Cells\\ArtikelTerkini::render', [], 0, 'AppCellsArtikelTerkinirender40cd750bba9870f18aada2478b24840a')
+10 APPPATH\Views\Layout\main.php(24): view_cell('\\App\\Cells\\ArtikelTerkini::render')
+11 SYSTEMPATH\View\View.php(238): include('C:\\xampp\\htdocs\\lab11_php_ci\\ci4\\app\\Views\\Layout\\main.php')
+12 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+13 SYSTEMPATH\View\View.php(254): CodeIgniter\View\View->render('layout/main', [], true)
+14 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('artikel/index', [], true)
+15 APPPATH\Controllers\Artikel.php(19): view('artikel/index', [...])
+16 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Artikel->index()
+17 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+18 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+21 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+22 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_php_ci\\ci4\\public\\index.php')
+CRITICAL - 2026-04-23 03:31:24 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Cells\ArtikelTerkini.php(12): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\View\Cell.php(280): App\Cells\ArtikelTerkini->render()
+ 9 SYSTEMPATH\View\Cell.php(106): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArtikelTerkini), 'render', [], 'App\\Cells\\ArtikelTerkini')
+10 SYSTEMPATH\Common.php(1266): CodeIgniter\View\Cell->render('\\App\\Cells\\ArtikelTerkini::render', [], 0, 'AppCellsArtikelTerkinirender40cd750bba9870f18aada2478b24840a')
+11 APPPATH\Views\Layout\main.php(24): view_cell('\\App\\Cells\\ArtikelTerkini::render')
+12 SYSTEMPATH\View\View.php(238): include('C:\\xampp\\htdocs\\lab11_php_ci\\ci4\\app\\Views\\Layout\\main.php')
+13 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(254): CodeIgniter\View\View->render('layout/main', [], true)
+15 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('artikel/index', [], true)
+16 APPPATH\Controllers\Artikel.php(19): view('artikel/index', [...])
+17 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Artikel->index()
+18 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+19 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+22 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+23 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_php_ci\\ci4\\public\\index.php')
+ERROR - 2026-04-23 03:31:26 --> Unknown column 'created_at' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Cells\ArtikelTerkini.php(12): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\View\Cell.php(280): App\Cells\ArtikelTerkini->render()
+ 9 SYSTEMPATH\View\Cell.php(106): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArtikelTerkini), 'render', [], 'App\\Cells\\ArtikelTerkini')
+10 SYSTEMPATH\Common.php(1266): CodeIgniter\View\Cell->render('\\App\\Cells\\ArtikelTerkini::render', [], 0, 'AppCellsArtikelTerkinirender40cd750bba9870f18aada2478b24840a')
+11 APPPATH\Views\Layout\main.php(24): view_cell('\\App\\Cells\\ArtikelTerkini::render')
+12 SYSTEMPATH\View\View.php(238): include('C:\\xampp\\htdocs\\lab11_php_ci\\ci4\\app\\Views\\Layout\\main.php')
+13 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(254): CodeIgniter\View\View->render('layout/main', [], true)
+15 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('artikel/index', [], true)
+16 APPPATH\Controllers\Artikel.php(19): view('artikel/index', [...])
+17 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Artikel->index()
+18 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+19 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+22 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+23 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_php_ci\\ci4\\public\\index.php')
+CRITICAL - 2026-04-23 03:31:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'order clause'
+[Method: GET, Route: artikel]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 2 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Cells\ArtikelTerkini.php(12): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\View\Cell.php(280): App\Cells\ArtikelTerkini->render()
+ 6 SYSTEMPATH\View\Cell.php(106): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArtikelTerkini), 'render', [], 'App\\Cells\\ArtikelTerkini')
+ 7 SYSTEMPATH\Common.php(1266): CodeIgniter\View\Cell->render('\\App\\Cells\\ArtikelTerkini::render', [], 0, 'AppCellsArtikelTerkinirender40cd750bba9870f18aada2478b24840a')
+ 8 APPPATH\Views\Layout\main.php(24): view_cell('\\App\\Cells\\ArtikelTerkini::render')
+ 9 SYSTEMPATH\View\View.php(238): include('C:\\xampp\\htdocs\\lab11_php_ci\\ci4\\app\\Views\\Layout\\main.php')
+10 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\View\View.php(254): CodeIgniter\View\View->render('layout/main', [], true)
+12 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('artikel/index', [], true)
+13 APPPATH\Controllers\Artikel.php(19): view('artikel/index', [...])
+14 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Artikel->index()
+15 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+16 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+19 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+20 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_php_ci\\ci4\\public\\index.php')
+CRITICAL - 2026-04-23 03:31:26 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 4 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Cells\ArtikelTerkini.php(12): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\View\Cell.php(280): App\Cells\ArtikelTerkini->render()
+ 8 SYSTEMPATH\View\Cell.php(106): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArtikelTerkini), 'render', [], 'App\\Cells\\ArtikelTerkini')
+ 9 SYSTEMPATH\Common.php(1266): CodeIgniter\View\Cell->render('\\App\\Cells\\ArtikelTerkini::render', [], 0, 'AppCellsArtikelTerkinirender40cd750bba9870f18aada2478b24840a')
+10 APPPATH\Views\Layout\main.php(24): view_cell('\\App\\Cells\\ArtikelTerkini::render')
+11 SYSTEMPATH\View\View.php(238): include('C:\\xampp\\htdocs\\lab11_php_ci\\ci4\\app\\Views\\Layout\\main.php')
+12 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+13 SYSTEMPATH\View\View.php(254): CodeIgniter\View\View->render('layout/main', [], true)
+14 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('artikel/index', [], true)
+15 APPPATH\Controllers\Artikel.php(19): view('artikel/index', [...])
+16 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Artikel->index()
+17 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+18 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+21 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+22 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_php_ci\\ci4\\public\\index.php')
+CRITICAL - 2026-04-23 03:31:26 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Cells\ArtikelTerkini.php(12): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\View\Cell.php(280): App\Cells\ArtikelTerkini->render()
+ 9 SYSTEMPATH\View\Cell.php(106): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArtikelTerkini), 'render', [], 'App\\Cells\\ArtikelTerkini')
+10 SYSTEMPATH\Common.php(1266): CodeIgniter\View\Cell->render('\\App\\Cells\\ArtikelTerkini::render', [], 0, 'AppCellsArtikelTerkinirender40cd750bba9870f18aada2478b24840a')
+11 APPPATH\Views\Layout\main.php(24): view_cell('\\App\\Cells\\ArtikelTerkini::render')
+12 SYSTEMPATH\View\View.php(238): include('C:\\xampp\\htdocs\\lab11_php_ci\\ci4\\app\\Views\\Layout\\main.php')
+13 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(254): CodeIgniter\View\View->render('layout/main', [], true)
+15 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('artikel/index', [], true)
+16 APPPATH\Controllers\Artikel.php(19): view('artikel/index', [...])
+17 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Artikel->index()
+18 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+19 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+22 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+23 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_php_ci\\ci4\\public\\index.php')
+DEBUG - 2026-04-23 03:31:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-23 03:31:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-04-23 03:32:47 --> Unknown column 'created_at' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Cells\ArtikelTerkini.php(12): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\View\Cell.php(280): App\Cells\ArtikelTerkini->render()
+ 9 SYSTEMPATH\View\Cell.php(106): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArtikelTerkini), 'render', [], 'App\\Cells\\ArtikelTerkini')
+10 SYSTEMPATH\Common.php(1266): CodeIgniter\View\Cell->render('\\App\\Cells\\ArtikelTerkini::render', [], 0, 'AppCellsArtikelTerkinirender40cd750bba9870f18aada2478b24840a')
+11 APPPATH\Views\Layout\main.php(24): view_cell('\\App\\Cells\\ArtikelTerkini::render')
+12 SYSTEMPATH\View\View.php(238): include('C:\\xampp\\htdocs\\lab11_php_ci\\ci4\\app\\Views\\Layout\\main.php')
+13 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(254): CodeIgniter\View\View->render('layout/main', [], true)
+15 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('about', [], true)
+16 APPPATH\Controllers\page.php(8): view('about', [...])
+17 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Page->about()
+18 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+19 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+22 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+23 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_php_ci\\ci4\\public\\index.php')
+CRITICAL - 2026-04-23 03:32:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'order clause'
+[Method: GET, Route: about]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 2 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Cells\ArtikelTerkini.php(12): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\View\Cell.php(280): App\Cells\ArtikelTerkini->render()
+ 6 SYSTEMPATH\View\Cell.php(106): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArtikelTerkini), 'render', [], 'App\\Cells\\ArtikelTerkini')
+ 7 SYSTEMPATH\Common.php(1266): CodeIgniter\View\Cell->render('\\App\\Cells\\ArtikelTerkini::render', [], 0, 'AppCellsArtikelTerkinirender40cd750bba9870f18aada2478b24840a')
+ 8 APPPATH\Views\Layout\main.php(24): view_cell('\\App\\Cells\\ArtikelTerkini::render')
+ 9 SYSTEMPATH\View\View.php(238): include('C:\\xampp\\htdocs\\lab11_php_ci\\ci4\\app\\Views\\Layout\\main.php')
+10 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\View\View.php(254): CodeIgniter\View\View->render('layout/main', [], true)
+12 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('about', [], true)
+13 APPPATH\Controllers\page.php(8): view('about', [...])
+14 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Page->about()
+15 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+16 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+19 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+20 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_php_ci\\ci4\\public\\index.php')
+CRITICAL - 2026-04-23 03:32:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 4 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Cells\ArtikelTerkini.php(12): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\View\Cell.php(280): App\Cells\ArtikelTerkini->render()
+ 8 SYSTEMPATH\View\Cell.php(106): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArtikelTerkini), 'render', [], 'App\\Cells\\ArtikelTerkini')
+ 9 SYSTEMPATH\Common.php(1266): CodeIgniter\View\Cell->render('\\App\\Cells\\ArtikelTerkini::render', [], 0, 'AppCellsArtikelTerkinirender40cd750bba9870f18aada2478b24840a')
+10 APPPATH\Views\Layout\main.php(24): view_cell('\\App\\Cells\\ArtikelTerkini::render')
+11 SYSTEMPATH\View\View.php(238): include('C:\\xampp\\htdocs\\lab11_php_ci\\ci4\\app\\Views\\Layout\\main.php')
+12 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+13 SYSTEMPATH\View\View.php(254): CodeIgniter\View\View->render('layout/main', [], true)
+14 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('about', [], true)
+15 APPPATH\Controllers\page.php(8): view('about', [...])
+16 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Page->about()
+17 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+18 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+21 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+22 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_php_ci\\ci4\\public\\index.php')
+CRITICAL - 2026-04-23 03:32:47 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 5 SYSTEMPATH\Model.php(254): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Cells\ArtikelTerkini.php(12): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\View\Cell.php(280): App\Cells\ArtikelTerkini->render()
+ 9 SYSTEMPATH\View\Cell.php(106): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArtikelTerkini), 'render', [], 'App\\Cells\\ArtikelTerkini')
+10 SYSTEMPATH\Common.php(1266): CodeIgniter\View\Cell->render('\\App\\Cells\\ArtikelTerkini::render', [], 0, 'AppCellsArtikelTerkinirender40cd750bba9870f18aada2478b24840a')
+11 APPPATH\Views\Layout\main.php(24): view_cell('\\App\\Cells\\ArtikelTerkini::render')
+12 SYSTEMPATH\View\View.php(238): include('C:\\xampp\\htdocs\\lab11_php_ci\\ci4\\app\\Views\\Layout\\main.php')
+13 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(254): CodeIgniter\View\View->render('layout/main', [], true)
+15 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('about', [], true)
+16 APPPATH\Controllers\page.php(8): view('about', [...])
+17 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Page->about()
+18 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+19 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+22 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+23 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\lab11_php_ci\\ci4\\public\\index.php')
+DEBUG - 2026-04-23 03:37:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-23 03:37:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-23 03:39:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-23 03:39:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-23 03:39:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-23 03:39:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-23 03:39:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-23 03:39:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-23 03:39:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-23 03:39:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-23 03:40:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-23 03:40:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-23 03:43:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-23 03:43:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-23 03:43:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-23 03:43:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-23 03:43:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-23 03:43:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-23 03:43:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

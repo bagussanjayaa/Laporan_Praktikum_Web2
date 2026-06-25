@@ -44,13 +44,13 @@ Tersedia halaman:
 - Tentang Saya
 - Kontak
 
-![Home Backend](nama-file.png)
+![Home Backend](pict/5.png)
 
-![Artikel Backend](nama-file.png)
+![Artikel Backend](pict/6.png)
 
-![About Backend](nama-file.png)
+![About Backend](pict/7.png)
 
-![Kontak Backend](nama-file.png)
+![Kontak Backend](pict/8.png)
 
 ### Tampilan Backend
 
@@ -97,7 +97,7 @@ Admin dapat melakukan:
 - Mengubah artikel
 - Menghapus artikel
 
-![Admin Artikel Backend](nama-file.png)
+![Admin Artikel Backend](pict/10.png)
 
 Database artikel:
 
@@ -245,7 +245,7 @@ Password
 ----------------------
 
 ```
-![Login Frontend](nama-file.png)
+![Login Frontend](pict/4.png)
 
 ---
 
@@ -258,9 +258,9 @@ Frontend memiliki fitur:
 * Edit artikel
 * Hapus artikel
 
-![Beranda](nama-file.png)
+![Beranda](pict/1.png)
 
-![Artikel Frontend](nama-file.png)
+![Artikel Frontend](pict/2.png)
 
 Tampilan:
 
@@ -302,7 +302,7 @@ Isi Artikel
 
 ```
 
-![Tambah frontend](nama-file.png)
+![Tambah frontend](pict/15.png)
 
 ---
 
@@ -323,7 +323,7 @@ Isi Lama
 
 ```
 
-![Tambah frontend](nama-file.png)
+![Tambah frontend](pict/16.png)
 
 ---
 
@@ -366,7 +366,7 @@ Project   : Portal Berita CI4 + Vue JS
 
 ```
 
-![About Frontend](nama-file.png)
+![About Frontend](pict/3.png)
 
 ---
 
@@ -426,7 +426,7 @@ Frontend berjalan:
 http://localhost:5173
 ```
 
-![cmd](nama-file.png)
+![cmd](pict/13.png)
 
 ---
 
@@ -446,7 +446,7 @@ Import tabel:
 
 ---
 
-![Database](nama-file.png)
+![Database](pict/14.png)
 
 # Kesimpulan
 

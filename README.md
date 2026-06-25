@@ -126,7 +126,7 @@ Endpoint API:
 
 GET
 
-[http://localhost:8080/post](http://localhost:8080/post)
+http://localhost:8080/post
 
 ````
 
@@ -243,8 +243,10 @@ Password
 [ Login ]
 
 ----------------------
+
 ```
 ![Login Frontend](nama-file.png)
+
 ---
 
 # Dashboard Artikel Vue
